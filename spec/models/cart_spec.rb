@@ -34,6 +34,7 @@ describe Cart do
       end
     end
 
+
   end
 
   describe 'associations' do
@@ -56,6 +57,7 @@ describe Cart do
     end
 
   end
+
 
 
 end

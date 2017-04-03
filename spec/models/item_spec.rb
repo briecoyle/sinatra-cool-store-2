@@ -15,6 +15,7 @@ describe Item do
       cart.items << item1
 
       expect(item1.cart).to eq(cart)
+
     end
   end
 end

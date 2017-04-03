@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< 697c54bd9a675a4c84b5408e68d5e4d7cb89fa52
 ActiveRecord::Schema.define(version: 20170403230623) do
+=======
+ActiveRecord::Schema.define(version: 20170403230651) do
+>>>>>>> Code-along with Cernan
 
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
