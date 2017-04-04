@@ -20,15 +20,26 @@ describe User do
     expect(user).to_not be_valid
   end
 
+<<<<<<< HEAD
   it 'is invalid without an email' do
     user = User.create(last_name: "Bernardo", first_name: "Cernan")
+=======
+  it 'is invalid without a first name' do
+    user = User.create(first_name: "Brie", last_name: "Coyle")
+>>>>>>> b238fc58b6ba1ce876b03d426438540876529a44
 
     expect(user).to_not be_valid
   end
 
+<<<<<<< HEAD
   it 'is invalid with a duplicate email' do
     user1 = User.create(first_name: "Cernan", last_name: "Bernardo", email: "cernan@flatironschool.com")
     user2 = User.create(first_name: "Ashley", last_name: "Jones", email: "cernan@flatironschool.com")
+=======
+  it 'has a unique email' do
+    user1 = User.create(first_name: "Brie", last_name: "Coyle", email: "brie.coyle@gmail.com")
+    user2 = User.create(first_name: "Brizzle", last_name: "Coyyyyyle", email: "brie.coyle@gmail.com")
+>>>>>>> b238fc58b6ba1ce876b03d426438540876529a44
 
     expect(user2).to_not be_valid
   end
